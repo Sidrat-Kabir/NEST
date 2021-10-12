@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--bootstrap CSS starts here-->
+    <link rel="stylesheet" href="assets/CSS/bootstrap.min.css">
+    <!--bootstrap CSS ends here-->
+    
+    <!--font awesome section starts here-->
+    <link rel="stylesheet" href="assets/CSS/fontawesome.min.css">
+    <!--font awesome section ends here-->
+
+    <!--fonts CSS starts here-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Quicksand:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!--fonts CSS ends here-->
+    
+    <!--slick CSS starts here-->
+    <link rel="stylesheet" href="assets/CSS/slick.css">
+    <!--bootstrap CSS ends here-->
+
+    <!--Main CSS starts here-->
+    <link rel="stylesheet" href="assets/CSS/style.css">
+    <!--Main CSS ends here-->
+
+    <!--responsive CSS starts here-->
+    <link rel="stylesheet" href="assets/CSS/responsive.css">
+    <!--responsive CSS ends here-->
+    <title>Nest</title>
+</head>
+<body>
+    <!--header section starts here-->
+    <header id="header">
+        <!--top header section starts here-->
+        <section class="top_header">
+            <div class="container-fluid">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-4">
+                        <div class="top_left_header">
+                            <ul>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">My Account</a></li>
+                                <li><a href="#">Wishlist</a></li>
+                                <li><a href="#">Order Tracking</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <ul class="top_header_slide">
+                            <li>Supper Value Deals - Save more with coupons</li>
+                            <li>Supper Value Deals - Save more with coupons</li>
+                            <li>Supper Value Deals - Save more with coupons</li>
+                        </ul>
+                    </div>
+                    <div class="col-4">
+                        <div class="top_right_header">
+                            <ul>
+                                <li><a href="tel:+02345433453">Need Help Call Us:<span>+ 1800 900</span></a></li>
+                                <li class="dropdown_list">
+                                    <a href="#" class="dropdown_toggle">English <i class="fas fa-angle-down"></i></a>
+                                    <ul class="dropdown_menu">
+                                        <li>
+                                            <a class="dropdown_item" href="#">
+                                               <img src="assets/img/flag-fr.png" alt="Français"> Français
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown_item" href="#">
+                                                <img src="assets/img/flag-dt.png" alt="Deutsch"> Deutsch
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown_item" href="#">
+                                                <img src="assets/img/flag-fr.png" alt="Pусский"> Pусский
+                                             </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown_list">
+                                    <a href="#" class="dropdown_toggle">USD<i class="fas fa-angle-down"></i></a>
+                                    <ul class="dropdown_menu">
+                                        <li>
+                                            <a class="dropdown_item" href="#">
+                                               <img src="assets/img/flag-fr.png" alt="Français"> USD
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown_item" href="#">
+                                                <img src="assets/img/flag-dt.png" alt="Deutsch"> INR
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown_item" href="#">
+                                                <img src="assets/img/flag-fr.png" alt="Pусский"> GBP
+                                             </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--top header section ends here-->
+        <section class="middle_header">
+            <div class="container-fluid">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-lg-3">
+                        <div class="logo">
+                            <a href="index.html" class="navbar-brand">
+                                <img src="assets/img/logo.svg" alt="#">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <form action="#" class="row align-items-center justify-content-center" id="form">
+                            <div class="col-lg-2">
+                                <div class="dropdown" id="dropdown_list">
+                                    <a class="dropdown-toggle dropdown_header" data-bs-toggle="dropdown">
+                                        All Categories
+                                    </a>
+                                    <ul class="dropdown-menu" id="dropdown_wrapper">
+                                        <li> <a class="dropdown-header dropdown_ttl">All Catagories</a></li>
+                                        <li> <a class="dropdown-item">Milk and Dairies</a></li>
+                                        <li> <a class="dropdown-item">Alcohol and Wine</a></li>
+                                        <li> <a class="dropdown-item">Clothing and Beauty</a></li>
+                                        <li> <a class="dropdown-item">Pet Foods and Toy</a></li>
+                                        <li> <a class="dropdown-item">Fast Food</a></li>
+                                        <li> <a class="dropdown-item">Baking Material</a></li>
+                                        <li> <a class="dropdown-item">Vegetables</a></li>
+                                        <li> <a class="dropdown-item">Fresh Seafood</a></li>
+                                        <li> <a class="dropdown-item">Noodles and rice </a></li>
+                                        <li> <a class="dropdown-item">Ice Cream</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-9">
+                                <div class="search_bar">
+                                    <input type="search" placeholder="Search for items..." class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-lg-1">
+                                <div class="search_icon">
+                                    <i class="fas fa-search"></i>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-lg-4">
+                        <ul class="middle_header_right">
+                            <li>
+                                <a href="#"><i class="fas fa-sync"></i>Compare<span>3</span></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fas fa-heart"></i>Wishlist<span>6</span></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fas fa-shopping-cart"></i>Cart<span>2</span></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fas fa-user"></i>Account</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="main_header">
+            <div class="container-fluid position-relative">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-lg-3">
+                        <div class="browse_btn">
+                            <div class="dropdown">
+                                <button type="button" class="dropdown-toggle" data-bs-toggle="dropdown">
+                                    <p class="text-center">All</p>
+                                    <p class="text-start"><i class="fas fa-th-large"></i> Browse</p> 
+                                    <p class="text-end">Categories</p>
+                                </button>
+                                <div class="dropdown-menu browse_drop">
+                                    <div class="row browse_wrap m-0">
+                                        <div class="col-lg-6">
+                                            <ul class="drop_inner">
+                                                <li> 
+                                                    <a class="dropdown-item">
+                                                        <img src="assets/img/category-1.svg" alt="">
+                                                        Milk and Dairies
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                     <a class="dropdown-item">
+                                                        <img src="assets/img/category-7.svg" alt="">
+                                                        Clothing and Beauty
+                                                    </a>
+                                                </li>
+                                                <li> 
+                                                    <a class="dropdown-item">
+                                                        <img src="assets/img/category-1.svg" alt="">
+                                                        Pet Foods and Toy
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                     <a class="dropdown-item">
+                                                        <img src="assets/img/category-9.svg" alt="">
+                                                         Baking Material
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                     <a class="dropdown-item">
+                                                        <img src="assets/img/category-1.svg" alt="">
+                                                         Fresh Fruit
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <ul class="inner">
+                                                <li> 
+                                                    <a class="dropdown-item">
+                                                        <img src="assets/img/category-7.svg" alt="">
+                                                        Alcohol and Wine
+                                                    </a>
+                                                </li>
+                                                <li> 
+                                                    <a class="dropdown-item">
+                                                        <img src="assets/img/category-9.svg" alt="">
+                                                        Fast Food
+                                                    </a>
+                                                </li>
+                                                <li> 
+                                                    <a class="dropdown-item">
+                                                        <img src="assets/img/category-1.svg" alt="">
+                                                        Vegetables
+                                                    </a>
+                                                </li>
+                                                <li> 
+                                                    <a class="dropdown-item">
+                                                        <img src="assets/img/category-7.svg" alt="">
+                                                        Fresh Seafood
+                                                    </a>
+                                                </li>
+                                                <li> 
+                                                    <a class="dropdown-item">
+                                                        <img src="assets/img/category-9.svg" alt="">
+                                                        Fresh juice 
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <ul class="main_menu">
+                            <li>
+                                <a href="#"  class="main_menu_item">
+                                    <i class="fas fa-fire"></i>Hot deals
+                                </a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle main_menu_item">Home</a>
+                                <ul class="dropdown-menu sub-menu">
+                                    <li> <a class="dropdown-item">Home 1</a></li>
+                                    <li> <a class="dropdown-item">Home 1</a></li>
+                                    <li> <a class="dropdown-item">Home 1</a></li>
+                                    <li> <a class="dropdown-item">Home 1</a></li>
+                                    <li> <a class="dropdown-item">Home 1</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" class="main_menu_item">About</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle main_menu_item">Shop</a>
+                                <ul class="dropdown-menu sub-menu">
+                                    <li> <a class="dropdown-item">Shop list</a></li>
+                                    <li> <a class="dropdown-item">Shops Grid</a></li>
+                                    <li> <a class="dropdown-item">Shop 1</a></li>
+                                    <li> <a class="dropdown-item">Shop 2</a></li>
+                                    <li> <a class="dropdown-item">Shop 3</a></li>
+                                    <li> <a class="dropdown-item">Shop left Grid</a></li>
+                                    <li> <a class="dropdown-item">Shop Layout</a></li>
+                                    <li> <a class="dropdown-item">Shop Right Grid</a></li>
+                                    <li> <a class="dropdown-item">Shop Cart</a></li>
+                                    <li> <a class="dropdown-item">Shop 10</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-toggle main_menu_item" >Vendors</a>
+                                <ul class="dropdown-menu sub-menu">
+                                    <li> <a class="dropdown-item">Vendor list</a></li>
+                                    <li> <a class="dropdown-item">Vendors Grid</a></li>
+                                    <li> <a class="dropdown-item">Vendor 1</a></li>
+                                    <li> <a class="dropdown-item">Vendor 2</a></li>
+                                    <li> <a class="dropdown-item">Vendor 3</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown mega_menu_area">
+                                <a href="#" class="dropdown-toggle main_menu_item" >Mega Menu</a>
+                                <div class="dropdown-menu mega_menu sub-menu">
+                                    <div class="row m-0 p-3">
+                                        <div class="col-lg-3">
+                                            <h3>Fruits and Vegetables</h3>
+                                            <ul>
+                                                <li> <a href="#">Milk and Dairies</a> </li>
+                                                <li> <a href="#">Alcohol and Wine</a></li>
+                                                <li> <a href="#">Clothing and Beauty</a></li>
+                                                <li> <a href="#">Pet Foods and Toy</a></li>
+                                                <li> <a href="#">Fast Food</a></li>
+                                                <li> <a href="#">Baking Material</a> </li>
+                                            </ul> 
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <h3>Breakfast and Dairy</h3>
+                                            <ul>
+                                                <li><a href="#">Vegetables</a></li>
+                                                <li><a href="#">Fresh Seafood</a></li>
+                                                <li><a href="#">Noodles and rice </a></li>
+                                                <li><a href="#">Ice Cream</a></li>
+                                                <li><a href="#">Noodles and rice </a></li>
+                                                <li><a href="#">Ice Cream</a></li>
+                                            </ul>  
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <h3>Meat and Seafood</h3>
+                                            <ul>
+                                                <li><a href="#">Vegetables</a></li>
+                                                <li><a href="#">Fresh Seafood</a></li>
+                                                <li><a href="#">Noodles and rice </a></li>
+                                                <li><a href="#">Ice Cream</a></li>
+                                                <li><a href="#">Noodles and rice </a></li>
+                                                <li><a href="#">Ice Cream</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="mega_menu_bg h-100 g-0">
+                                                <p>Hot deals</p>
+                                                <h3>Don't miss</h3>
+                                                <h3>Trending</h3>
+                                                <h3 class="highlight">Save to 50%</h3>
+                                                <a href="#">Shop Now</a>
+                                                <div class="sale_sign">
+                                                    <h3>25% Off</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </dli>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle main_menu_item" >Blog</a>
+                                <ul class="dropdown-menu sub-menu">
+                                    <li> <a class="dropdown-item">Blog Category List</a></li>
+                                    <li> <a class="dropdown-item">Blog Category Grid</a></li>
+                                    <li> <a class="dropdown-item">Blog Category 01</a></li>
+                                    <li> <a class="dropdown-item">Blog Category 02</a></li>
+                                    <li> <a class="dropdown-item">Single Post</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle  main_menu_item" >Pages</a>
+                                <ul class="dropdown-menu sub-menu">
+                                    <li> <a class="dropdown-item">About Us</a></li>
+                                    <li> <a class="dropdown-item">Contact</a></li>
+                                    <li> <a class="dropdown-item">Login</a></li>
+                                    <li> <a class="dropdown-item">My Account</a></li>
+                                    <li> <a class="dropdown-item">Register</a></li>
+                                    <li> <a class="dropdown-item">Privacy policy</a></li>
+                                    <li> <a class="dropdown-item">Purchase Guidline</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle  main_menu_item" >Vendors</a>
+                                <ul class="dropdown-menu sub-menu">
+                                    <li> <a class="dropdown-item">Vendor list</a></li>
+                                    <li> <a class="dropdown-item">Vendors Grid</a></li>
+                                    <li> <a class="dropdown-item">Vendor 1</a></li>
+                                    <li> <a class="dropdown-item">Vendor 2</a></li>
+                                    <li> <a class="dropdown-item">Vendor 3</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" class="main_menu_item">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="row m-0 call_to_action align-items-center justify-content-center">
+                            <div class="col-lg-4 text-center">
+                                <i class="fas fa-headset"></i>
+                            </div>
+                            <div class="col-lg-8">
+                                <span>1900 - 888</span>
+                                <p>24/7 Support Center</p>    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <!--header section ends here-->
+    
+    <!--Banner Section Begins Here-->
+    <section id="banner">
+        <div class="container-fluid">
+            <div class="banner_wrapper">
+                <div class="banner_content" style="background-image: url('assets/img/slider-2.png');">
+                    <div class="banner_text w-50">
+                        <h1>Fresh Vegetables Big Discount</h1>
+                        <p>Save upto 50% on your first order </p>
+                        <form class="row banner_form bg-white">
+                            <div class="col-md-1 plane_icon">
+                                <img src="assets/img/icon-plane.png" alt="">
+                            </div>
+                            <div class="col-md-7">
+                                <input type="email" placeholder="Your email address">
+                            </div>
+                            <div class="col-md-4">
+                                <button type="submit" class="subscribe">Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="banner_content" style="background-image: url('assets/img/slider-1.png');">
+                    <div class="banner_text">
+                        <h1>Don't miss amazing grocery deals</h1>
+                        <p>Sign up for the daily newsletter</p>
+                        <form class="row banner_form bg-white">
+                            <div class="col-md-1 plane_icon">
+                                <img src="assets/img/icon-plane.png" alt="">
+                            </div>
+                            <div class="col-md-7">
+                                <input type="email" placeholder="Your email address">
+                            </div>
+                            <div class="col-md-4">
+                                <button type="submit" class="subscribe">Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Banner Section ends Here-->
+
+     <!--Jquery begins here-->
+     <script src="assets/JS/jquery-3.6.0.min.js"></script>
+     <!--Jquery begins here-->
+ 
+     <!--bootstrap JS begins here-->
+     <script src="assets/JS/bootstrap.min.js"></script>
+     <!--bootstrap JS ends here-->
+ 
+     <!--slick JS begins here-->
+     <script src="assets/JS/slick.min.js"></script>
+     <!--slick JS begins here-->
+ 
+     <!--main JS begins here-->
+     <script src="assets/JS/script.js"></script>
+     <!--main JS begins here-->
+</body>
+</html>

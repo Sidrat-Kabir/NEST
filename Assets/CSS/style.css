@@ -1,0 +1,487 @@
+/*  template name: Nest
+    author name: someone
+    description: grocery, super market, ecommerce HTML template
+    version: 1.0
+
+    Table of Contents
+    1) Common
+*/
+
+/*common Css */
+:root {
+    --quicksand: 'Quicksand', sans-serif;
+    --lato: 'lato', sans-serif;
+    --main: #3BB77E;
+    --text-grey: #7e7e7e;
+    --p-black: #b6b6b6;
+    --hlt-text: #253d4e;
+    --hover-yellow: #FDC040;
+    --hot-product: #f74b81;
+    --sale-product: #67bcee;
+    --perc-product: #f59758;
+    --border-clr: #dedfe2;
+}
+body {
+    font-family: var(--quicksand);
+    color: var(--text-grey);
+}
+h1,h2,h3,h4,h5,h6,p,a,ol,ul {
+    padding: 0;
+    margin: 0;
+}
+ul {
+    list-style-type: none;
+}
+a,a:hover {
+    text-decoration: none;
+}
+/*common Css */
+
+/* header section Css starts here */
+#header ul li {
+    display: inline-block;
+}
+/*top header section Css begins here */
+#header .top_header ul li  {
+    font-family: var(--lato);
+    font-size: 13px;
+    position: relative;
+}
+#header .top_header ul li a {
+    display: inline-block;
+    color: var(--text-grey);
+    padding: 15px 16px;
+    transition: all linear 0.3s;
+}
+#header .top_header ul li a:hover {
+    color: var(--hlt-text);
+}
+#header .top_header ul li::after {
+    content: '';
+    position: absolute;
+    bottom: 15px;
+    background-color: var(--border-clr);
+    height: 10px;
+    width: 1px;
+}
+#header .top_header_slide {
+    text-align: center;
+    font-weight: 700;
+}
+#header .top_right_header ul li {
+    position: relative;
+} 
+#header .top_right_header ul li i {
+    padding-left: 10px;
+}
+#header .top_right_header ul li ul {
+    position: absolute;
+    left: 10px;
+    border: 1px solid var(--border-clr);
+    transform: translateY(30px);
+    visibility: hidden;
+    opacity: 0;
+    transition: all linear 0.3s;
+    z-index: 99;
+    background-color: #fff;
+}
+#header .top_right_header ul li ul img {
+    max-width: 15px;
+    max-height: 10px;
+}
+#header .top_right_header ul li ul li a {
+    padding: 4px 8px 8px 7px;
+    color: var(--hlt-text);
+}
+#header .top_right_header ul li ul li::after {
+    height: 0;
+}
+#header .top_right_header ul li:hover > ul {
+    transform: translateY(-10px);
+    visibility: visible;
+    opacity: 1;
+}
+#header .top_right_header ul li span {
+    color: var(--main);
+    font-weight: 700;
+}
+/* top header section Css ends here */
+
+/* middle header section CSS starts here */
+#header .middle_header {
+    border: 1px solid var(--border-clr)
+}
+#header .middle_header #form input {
+    border: none;
+    font-family: var(--lato);
+    font-size: 14px;
+    padding-left: 25px;
+}
+#header .middle_header #form input:focus {
+    box-shadow: none;
+}
+#header .middle_header #dropdown_list a.dropdown_header{
+    font-family: var(--quicksand);
+    color: var(--hlt-text);
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    line-height: 50px;
+}
+#header .middle_header li a {
+    color: var(--text-grey);
+    font-family: var(--lato);
+}
+#header .middle_header #dropdown_wrapper {
+    max-height: 190px;
+    overflow: auto;
+}
+#header .middle_header #dropdown_wrapper li {
+    display: block;
+    cursor: pointer;
+}
+#header .middle_header #dropdown_wrapper li a {
+    font-size: 14px;
+    padding: 6px 13px;
+}
+#header .middle_header #dropdown_wrapper li a.dropdown_ttl {
+    background-color: #ececec;
+}
+#header .middle_header #dropdown_wrapper li a.dropdown_ttl:hover {
+    background-color: #ececec;
+}
+#header .middle_header #dropdown_wrapper li a:hover {
+    background-color: rgb(157, 219, 201)
+}
+#header .middle_header #form {
+    border: 2px solid rgb(157, 219, 201);
+    border-radius: 5px;
+}
+#header .middle_header .middle_header_right i {
+    font-size: 24px;
+    color: var(--hlt-text);
+    padding-right: 5px;
+}
+#header .middle_header .middle_header_right li a {
+    display: block;
+    padding: 48px 6px;
+    position: relative;
+}
+#header .middle_header .search_icon {
+    font-size: 20px
+}
+#header .middle_header .middle_header_right span {
+    position: absolute;
+    left: 20px;
+    bottom: 60px;
+    background-color: #3BB77E;
+    border-radius: 50%;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    line-height: 20px;
+    color: #fff;
+    font-family: var(--lato);
+    font-size: 12px;
+    font-weight: 500;
+}
+/* middle header section Css ends here */
+
+/* main menu section CSS begins here */
+#header .main_header {
+    border-bottom: 1px solid var(--border-clr);
+}
+#header .main_header .main_menu li:hover > ul.dropdown-menu, #header .main_header .main_menu li:hover > .dropdown-menu {
+    display: block;
+}
+#header .main_header .main_menu li ul li, #header .browse_btn ul li {
+    display: block;
+}
+#header .main_header .browse_btn button {
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    background-color: var(--main);
+    border: none;
+    border-radius: 5px;
+    width: 230px;
+    padding: 0px 30px;
+}
+#header .browse_btn .dropdown-toggle::after {
+    transform: translate(93px, -45px);
+}
+#header .browse_btn .browse_drop {
+    width: 500px;
+    border: 1px solid rgb(157, 219, 201);
+}
+#header .browse_btn .browse_wrap {
+    padding:15px;
+}
+#header .browse_btn .browse_drop img {
+    max-width: 30px;
+    margin-right: 10px;
+}
+#header .browse_btn ul li {
+    margin-top: 10px;
+    border: 1px solid var(--border-clr);
+    border-radius: 5px;
+    padding: 8px 0px;
+    transition: all linear 0.3s;
+}
+#header .browse_btn ul li a{
+    font-weight: 700;
+    font-size: 14px;
+    transition: all linear 0.3s;
+}
+#header .browse_btn ul li:hover {
+    border: 1px solid rgb(157, 219, 201);
+    box-shadow: 5px 5px 15px rgb(0 0 0 / 5%);
+    cursor: pointer;
+}
+#header .browse_btn ul li:hover > a {
+    color: var(--main);
+}
+.dropdown-item:focus, .dropdown-item:hover {
+    background-color: #fff;
+}
+#header .main_menu li a.main_menu_item {
+    color: var(--hlt-text);
+    font-weight: 700;
+    padding: 25px 15px;
+    display:  inline-block;
+    font-size: 16px;
+    transition: all linear 0.3s;
+}
+#header .main_menu li a.main_menu_item  i {
+    color: var(--main);
+    font-size: 18px;
+    padding-right: 2px;
+}
+#header .main_menu li a.main_menu_item:hover {
+    color: var(--main);
+}
+#header .main_menu .sub-menu {
+    border: 1px solid var(--border-clr);
+    box-shadow: 5px 5px 15px rgb(0 0 0 / 5%);
+    border-radius: 5px;
+}
+#header .main_menu .sub-menu li a {
+    font-size: 14px;
+    color: #7E7E7E;
+    display: block;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all linear 0.3s;
+}
+#header .main_menu .sub-menu li > a:hover {
+    color: var(--main)
+}
+#header .main_header .main_menu .mega_menu_area{
+    position: static;
+}
+#header .main_header .call_to_action i{
+    font-size: 40px;
+    line-height: 40px;
+    color: var(--hlt-text);
+}
+#header .main_header .call_to_action span {
+    color: var(--main);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1;
+}
+#header .main_header .call_to_action p {
+    font-size: 14px;
+    font-family: var(--lato);
+}
+.mega_menu{
+    width: calc(100% - 24px);
+    font-weight: 700;
+}
+#header .main_header .mega_menu ul li a:hover {
+    color: var(--main);
+}
+.mega_menu.dropdown-menu{
+    left: 12px;
+}
+#header .main_header .mega_menu h3 {
+    color: var(--main);
+    font-weight: 700;
+    font-size: 19px;
+}
+#header .main_header .mega_menu ul {
+    padding-top: 20px;
+}
+#header .main_header .mega_menu ul li a{
+    color: var(--text-grey);
+    font-size: 15px;
+    transition: all linear 0.3s;
+    padding-bottom: 10px;
+    display: block;
+}
+#header .main_header .mega_menu_bg  {
+    background-image: url(../img/banner-menu.png);
+    background-size: cover;
+    background-position: center;
+    margin: 0px 0px 0px 30px;
+    border-radius: 20px;
+    padding: 20px;
+    position: relative;
+}
+#header .main_header .mega_menu_bg p {
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 5px 0px;
+}
+#header .main_header .mega_menu_bg h3 {
+    color: var(--hlt-text);
+    font-size: 24px;
+    padding-bottom: 7px;
+}
+#header .main_header .mega_menu_bg h3.highlight {
+    color: #81b13d;
+}
+#header .main_header .mega_menu_bg a {
+    display: inline-block;
+    background-color: var(--main);
+    padding: 7px 15px;
+    border-radius: 20px;
+    color: #Fff;
+    transition: all linear 0.3s;
+    margin-top: 10px;
+}
+#header .main_header .mega_menu_bg a:hover {
+    background-color:#fd657a;
+}
+#header .main_header .mega_menu_bg .sale_sign {
+    position: absolute;
+    left: 70%;
+    top: 20px;
+    background-color: var(--hover-yellow);
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+}
+#header .main_header .mega_menu_bg .sale_sign h3 {
+    line-height: 80px;
+    font-size: 18px;
+}
+/* main menu section CSS ends here */
+
+/* banner section CSS begins here */
+#banner {
+    margin: 12px 0px;
+}
+#banner .banner_content {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 467px;
+    border-radius: 40px;
+}
+#banner .banner_text {
+    width: 55%;
+    padding: 64px 0px 80px 75px;
+}
+#banner h1 {
+    font-size: 64px;
+    color: var(--hlt-text);
+    font-weight: 700;
+}
+#banner p {
+    font-size: 32px;
+    font-weight: 500;
+    padding: 10px 0px 40px;
+}
+#banner .banner_form {
+    width: 450px;
+    border-radius: 50px 0 0 50px;
+}
+#banner .banner_form input {
+    font-size: 16px;
+    height: 64px;
+    border: none;
+    padding: 10px 0px 10px 7px;
+}
+#banner .banner_form input:focus {
+    outline: none;
+}
+#banner .banner_form .plane_icon img {
+    position: relative;
+    left: 65%;
+    top: 30%;
+    display: inline-block;
+}
+#banner .banner_form button {
+    background: var(--main);
+    border: none;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 50px;
+    padding: 21px 47px;
+    transition: all linear 0.2s;
+} 
+#banner .banner_form button:hover {
+    background-color: #29A56C
+}
+#banner .banner_wrapper .banner_icon {
+    position: absolute;
+    top: 50%;
+    left: 23px;
+    width: 45px;
+    height: 45px;
+    display: inline-block;
+    font-size: 16px;
+    background-color: #ececec;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 50%;
+    z-index: 1;
+    cursor: pointer;
+    transition: all linear 0.4s;
+    visibility: hidden;
+    opacity: 0;
+}
+#banner .banner_wrapper i.fa-chevron-right {
+    left: auto;
+    right: 25px;
+}
+#banner .banner_wrapper .banner_icon:hover {
+    background-color: var(--main);
+    color: #fff;
+}
+#banner:hover .banner_icon {
+    visibility: visible;
+    opacity: 1;
+}
+#banner .banner_wrapper .slick-dots button {
+    background: none;
+    border: 1px solid var(--hlt-text);
+    font-size: 0px;
+    padding: 0px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: all linear 0.3s;
+}
+#banner .banner_wrapper .slick-dots {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#banner .banner_wrapper .slick-dots li {
+    display: inline-block;
+}
+#banner .banner_wrapper .slick-dots li.slick-active button {
+    background-color: var(--main);
+    border: 1px solid var(--main)
+}
+
+/* banner section CSS ends here */
+
+/*header section Css ends here */
