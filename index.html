@@ -16,7 +16,7 @@
     <!--fonts CSS starts here-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Quicksand:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <!--fonts CSS ends here-->
     
     <!--slick CSS starts here-->
@@ -36,7 +36,7 @@
     <!--header section starts here-->
     <header id="header">
         <!--top header section starts here-->
-        <section class="top_header">
+        <div class="top_header">
             <div class="container-fluid">
                 <div class="row align-items-center justify-content-center">
                     <div class="col-4">
@@ -105,9 +105,11 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
         <!--top header section ends here-->
-        <section class="middle_header">
+
+        <!--middle header section starts here-->
+        <div class="middle_header">
             <div class="container-fluid">
                 <div class="row align-items-center justify-content-center">
                     <div class="col-lg-3">
@@ -169,49 +171,52 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="main_header">
+        </div>
+        <!--middle header section ends here-->
+
+        <!--main header section starts here-->
+        <div class="main_header">
             <div class="container-fluid position-relative">
                 <div class="row align-items-center justify-content-center">
                     <div class="col-lg-3">
                         <div class="browse_btn">
                             <div class="dropdown">
-                                <button type="button" class="dropdown-toggle" data-bs-toggle="dropdown">
+                                <div class="dropdown-toggle browse_all_btn " data-bs-toggle="dropdown">
                                     <p class="text-center">All</p>
                                     <p class="text-start"><i class="fas fa-th-large"></i> Browse</p> 
                                     <p class="text-end">Categories</p>
-                                </button>
+                                </div>
                                 <div class="dropdown-menu browse_drop">
                                     <div class="row browse_wrap m-0">
                                         <div class="col-lg-6">
                                             <ul class="drop_inner">
                                                 <li> 
                                                     <a class="dropdown-item">
-                                                        <img src="Assets/img/category-1.svg" alt="">
+                                                        <img src="Assets/img/category-1.svg" alt="#">
                                                         Milk and Dairies
                                                     </a>
                                                 </li>
                                                 <li>
                                                      <a class="dropdown-item">
-                                                        <img src="Assets/img/category-7.svg" alt="">
+                                                        <img src="Assets/img/category-7.svg" alt="#">
                                                         Clothing and Beauty
                                                     </a>
                                                 </li>
                                                 <li> 
                                                     <a class="dropdown-item">
-                                                        <img src="Assets/img/category-1.svg" alt="">
+                                                        <img src="Assets/img/category-1.svg" alt="#">
                                                         Pet Foods and Toy
                                                     </a>
                                                 </li>
                                                 <li>
                                                      <a class="dropdown-item">
-                                                        <img src="Assets/img/category-9.svg" alt="">
+                                                        <img src="Assets/img/category-9.svg" alt="#">
                                                          Baking Material
                                                     </a>
                                                 </li>
                                                 <li>
                                                      <a class="dropdown-item">
-                                                        <img src="Assets/img/category-1.svg" alt="">
+                                                        <img src="Assets/img/category-1.svg" alt="#">
                                                          Fresh Fruit
                                                     </a>
                                                 </li>
@@ -221,31 +226,31 @@
                                             <ul class="inner">
                                                 <li> 
                                                     <a class="dropdown-item">
-                                                        <img src="Assets/img/category-7.svg" alt="">
+                                                        <img src="Assets/img/category-7.svg" alt="#">
                                                         Alcohol and Wine
                                                     </a>
                                                 </li>
                                                 <li> 
                                                     <a class="dropdown-item">
-                                                        <img src="Assets/img/category-9.svg" alt="">
+                                                        <img src="Assets/img/category-9.svg" alt="#">
                                                         Fast Food
                                                     </a>
                                                 </li>
                                                 <li> 
                                                     <a class="dropdown-item">
-                                                        <img src="Assets/img/category-1.svg" alt="">
+                                                        <img src="Assets/img/category-1.svg" alt="#">
                                                         Vegetables
                                                     </a>
                                                 </li>
                                                 <li> 
                                                     <a class="dropdown-item">
-                                                        <img src="Assets/img/category-7.svg" alt="">
+                                                        <img src="Assets/img/category-7.svg" alt="#">
                                                         Fresh Seafood
                                                     </a>
                                                 </li>
                                                 <li> 
                                                     <a class="dropdown-item">
-                                                        <img src="Assets/img/category-9.svg" alt="">
+                                                        <img src="Assets/img/category-9.svg" alt="#">
                                                         Fresh juice 
                                                     </a>
                                                 </li>
@@ -350,7 +355,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </dli>
+                            </li>
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle main_menu_item" >Blog</a>
                                 <ul class="dropdown-menu sub-menu">
@@ -401,7 +406,8 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+        <!--main header section starts here-->
     </header>
     <!--header section ends here-->
     
@@ -415,7 +421,7 @@
                         <p>Save upto 50% on your first order </p>
                         <form class="row banner_form bg-white">
                             <div class="col-md-1 plane_icon">
-                                <img src="Assets/img/icon-plane.png" alt="">
+                                <img src="Assets/img/icon-plane.png" alt="#">
                             </div>
                             <div class="col-md-7">
                                 <input type="email" placeholder="Your email address">
@@ -432,7 +438,7 @@
                         <p>Sign up for the daily newsletter</p>
                         <form class="row banner_form bg-white">
                             <div class="col-md-1 plane_icon">
-                                <img src="Assets/img/icon-plane.png" alt="">
+                                <img src="Assets/img/icon-plane.png" alt="#">
                             </div>
                             <div class="col-md-7">
                                 <input type="email" placeholder="Your email address">
@@ -448,6 +454,224 @@
     </section>
     <!--Banner Section ends Here-->
 
+    <!--Featured Categories Section begins here-->
+    <section id="feature">
+        <div class="container-fluid">
+            <div class="section_header d-flex align-items-end">
+                <div class="section_ttl">
+                    <h3>Featured Categories</h3>
+                </div>
+                <div class="section_menu">
+                    <ul>
+                        <li><a href="#">Cake & Milk</a></li>
+                        <li><a href="#">Coffes & Teas</a></li>
+                        <li><a href="#">Pet Foods</a></li>
+                        <li><a href="#">Vegetables</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="feature_slider text-center">
+            <div class="feature_item">
+                <div class="feature_inner">
+                    <div class="feature_wrapper" style="background-color: #f2fce4; border: 1px solid #f2fce4;">
+                        <div class="feature_product">
+                            <img src="Assets/img/cat-1.png" alt="">
+                        </div>
+                        <div class="feature_text">
+                            <h5>Vegetables</h5>
+                            <span>26 items</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="feature_item">
+                <div class="feature_item">
+                    <div class="feature_inner">
+                        <div class="feature_wrapper" style="background-color: #fffceb; border: 1px solid #fffceb">
+                            <div class="feature_product">
+                                <a href="#"><img src="Assets/img/cat-11.png" alt=""></a>
+                            </div>
+                            <div class="feature_text">
+                                <h5>Peach</h5>
+                                <span>14 items</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="feature_item">
+                <div class="feature_item">
+                    <div class="feature_inner">
+                        <div class="feature_wrapper" style="background-color: #ecffec; border: 1px solid #ecffec">
+                            <div class="feature_product">
+                                <a href="#"><img src="Assets/img/cat-12.png" alt=""></a>
+                            </div>
+                            <div class="feature_text">
+                                <h5>Organic Kiwi</h5>
+                                <span>28 items</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="feature_item">
+                <div class="feature_item">
+                    <div class="feature_inner">
+                        <div class="feature_wrapper" style="background-color: #feefea; border: 1px solid #feefea">
+                            <div class="feature_product">
+                                <a href="#"><img src="Assets/img/cat-13.png" alt=""></a>
+                            </div>
+                            <div class="feature_text">
+                                <h5>Fast Food</h5>
+                                <span>28 items</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="feature_item">
+                <div class="feature_item">
+                    <div class="feature_inner">
+                        <div class="feature_wrapper" style="background-color: #fff3eb; border: 1px solid #fff3eb">
+                            <div class="feature_product">
+                                <a href="#"><img src="Assets/img/cat-14.png" alt=""></a>
+                            </div>
+                            <div class="feature_text">
+                                <h5>Coffe & Tea</h5>
+                                <span>89 items</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="feature_item">
+                <div class="feature_item">
+                    <div class="feature_inner">
+                        <div class="feature_wrapper" style="background-color: #fff3ff; border: 1px solid #fff3ff">
+                            <div class="feature_product">
+                                <a href="#"><img src="Assets/img/cat-15.png" alt=""></a>
+                            </div>
+                            <div class="feature_text">
+                                <h5>Headphone</h5>
+                                <span>87 items</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="feature_item">
+                <div class="feature_item">
+                    <div class="feature_inner">
+                        <div class="feature_wrapper" style="background-color: #f2fce4; border: 1px solid #f2fce4">
+                            <div class="feature_product">
+                                <a href="#"><img src="Assets/img/cat-2.png" alt=""></a>
+                            </div>
+                            <div class="feature_text">
+                                <h5>Strawberry</h5>
+                                <span>15 items</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="feature_item">
+                <div class="feature_item">
+                    <div class="feature_inner">
+                        <div class="feature_wrapper" style="background-color: #feefea; border: 1px solid #feefea">
+                            <div class="feature_product">
+                                <a href="#"><img src="Assets/img/cat-3.png" alt=""></a>
+                            </div>
+                            <div class="feature_text">
+                                <h5>Snack</h5>
+                                <span>53 items</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="feature_item">
+                <div class="feature_item">
+                    <div class="feature_inner">
+                        <div class="feature_wrapper" style="background-color: #fffceb; border: 1px solid #fffceb">
+                            <div class="feature_product">
+                                <a href="#"><img src="Assets/img/cat-4.png" alt=""></a>
+                            </div>
+                            <div class="feature_text">
+                                <h5>Black Plum</h5>
+                                <span>123 items</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="feature_item">
+                <div class="feature_item">
+                    <div class="feature_inner">
+                        <div class="feature_wrapper" style="background-color: #feefea; border: 1px solid #feefea">
+                            <div class="feature_product">
+                                <a href="#"><img src="Assets/img/cat-5.png" alt=""></a>
+                            </div>
+                            <div class="feature_text">
+                                <h5>Sugar Apple</h5>
+                                <span>34 items</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="feature_item">
+                <div class="feature_item">
+                    <div class="feature_inner">
+                        <div class="feature_wrapper" style="background-color: #ecffec; border: 1px solid #ecffec">
+                            <div class="feature_product">
+                                <a href="#"><img src="Assets/img/cat-9.png" alt=""></a>
+                            </div>
+                            <div class="feature_text">
+                                <h5>Red Apple</h5>
+                                <span>54 items</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Featured Categories Section ends here-->
+
+    <!--shop now Section starts here-->
+    <section id="shop_now">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-4">
+                    <div class="shop_item shop1">
+                        <div class="shop_text">
+                            <h4>Everyday Fresh & Clean with Our Products</h4>
+                            <a href="#">Shop Now <i class="fas fa-long-arrow-alt-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="shop_item shop2">
+                        <div class="shop_text">
+                            <h4>Make your Breakfast Healthy and Easy</h4>
+                            <a href="#">Shop Now <i class="fas fa-long-arrow-alt-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="shop_item shop3">
+                        <div class="shop_text">
+                            <h4>The best Organic Products Online</h4>
+                            <a href="#">Shop Now <i class="fas fa-long-arrow-alt-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--shop now Section ends here-->
+    
      <!--Jquery begins here-->
      <script src="Assets/JS/jquery-3.6.0.min.js"></script>
      <!--Jquery begins here-->
@@ -465,3 +689,4 @@
      <!--main JS begins here-->
 </body>
 </html>
+
