@@ -35,6 +35,41 @@ ul {
 a,a:hover {
     text-decoration: none;
 }
+.section_header .section_ttl h3{
+    font-size: 32px;
+    color: var(--hlt-text);
+    font-weight: 700;
+    margin-right: 20px
+}
+.section_header .section_menu ul li{
+    display: inline-block;
+}
+.section_header .section_menu li a {
+    display: block;
+    color: var(--hlt-text);
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0px 12px;
+    transition: all linear 0.2s;
+}
+.section_header .section_menu li a:hover {
+    color: var(--main);
+    transform: translateY(-4px);
+}
+.slider_icon {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    font-size: 14px;
+    background-color: #f2f3f4;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    z-index: 1;
+    cursor: pointer;
+    transition: all linear 0.4s;
+}
 /*common Css */
 
 /* header section Css starts here */
@@ -188,7 +223,7 @@ a,a:hover {
 }
 /* middle header section Css ends here */
 
-/* main menu section CSS begins here */
+/* main header section CSS begins here */
 #header .main_header {
     border-bottom: 1px solid var(--border-clr);
 }
@@ -198,7 +233,7 @@ a,a:hover {
 #header .main_header .main_menu li ul li, #header .browse_btn ul li {
     display: block;
 }
-#header .main_header .browse_btn button {
+#header .main_header .browse_btn .browse_all_btn {
     font-size: 16px;
     font-weight: 700;
     color: #fff;
@@ -206,10 +241,10 @@ a,a:hover {
     border: none;
     border-radius: 5px;
     width: 230px;
-    padding: 0px 30px;
+    padding: 0px 32px;
 }
 #header .browse_btn .dropdown-toggle::after {
-    transform: translate(93px, -45px);
+    transform: translate(173px, -42px);
 }
 #header .browse_btn .browse_drop {
     width: 500px;
@@ -369,11 +404,13 @@ a,a:hover {
     line-height: 80px;
     font-size: 18px;
 }
-/* main menu section CSS ends here */
+/* main header section CSS ends here */
+
+/*header section Css ends here */
 
 /* banner section CSS begins here */
 #banner {
-    margin: 12px 0px;
+    margin-top: 30px;
 }
 #banner .banner_content {
     position: relative;
@@ -428,35 +465,28 @@ a,a:hover {
     background-color: #29A56C
 }
 #banner .banner_wrapper .banner_icon {
-    position: absolute;
     top: 50%;
     left: 23px;
     width: 45px;
     height: 45px;
-    display: inline-block;
-    font-size: 16px;
-    background-color: #ececec;
-    text-align: center;
     line-height: 45px;
-    border-radius: 50%;
-    z-index: 1;
-    cursor: pointer;
-    transition: all linear 0.4s;
+    font-size: 16px;
     visibility: hidden;
     opacity: 0;
-}
-#banner .banner_wrapper i.fa-chevron-right {
-    left: auto;
-    right: 25px;
-}
-#banner .banner_wrapper .banner_icon:hover {
-    background-color: var(--main);
-    color: #fff;
 }
 #banner:hover .banner_icon {
     visibility: visible;
     opacity: 1;
 }
+#banner .banner_wrapper i.fa-chevron-right {
+    left: auto;
+    right: 25px;
+}
+.slider_icon:hover {
+    background-color: var(--main);
+    color: #fff;
+}
+
 #banner .banner_wrapper .slick-dots button {
     background: none;
     border: 1px solid var(--hlt-text);
@@ -481,7 +511,123 @@ a,a:hover {
     background-color: var(--main);
     border: 1px solid var(--main)
 }
-
 /* banner section CSS ends here */
 
-/*header section Css ends here */
+/* feature section CSS begins here */
+#feature {
+    margin: 50px 0px 65px;
+    position: relative;
+}
+#feature .section_header {
+    margin-bottom: 45px;
+}
+#feature .section_menu ul li:nth-child(3) a {
+    color: var(--main);
+} 
+#feature .feature_inner {
+    padding: 0px 12px;
+    overflow: hidden;
+}
+#feature .feature_inner .feature_wrapper {
+    border-radius: 10px;
+    transition: all linear 0.3s;
+}
+#feature .feature_inner .feature_wrapper:hover {
+    border: 1px solid #BCE3C9 !important;
+    box-shadow: 5px 5px 15px rgb(0 0 0 / 5%);
+}
+#feature .feature_product {
+    padding: 21px 10px 14px;
+}
+#feature .feature_product img {
+    width: 100%;
+    display: inline-block;
+    transition: all linear 0.3s;
+}
+#feature .feature_wrapper .feature_product:hover img{
+    transform: scale(1.05);
+}
+#feature .feature_text {
+    padding-bottom: 20px;
+}
+#feature .feature_text h5{
+    color: var(--hlt-text);
+    font-weight: 700;
+    font-size: 16px;
+    transition: all linear 0.3s;
+}
+#feature .feature_inner .feature_wrapper:hover .feature_text h5 {
+    color: var(--main);
+}
+#feature .feature_text span {
+    font-size: 14px;
+    font-family: var(--lato);
+}
+#feature .feature_icon {
+    top: -80px;
+    right: 20px;
+}
+#feature .feature_icon.fa-arrow-left {
+    right: 70px;
+}
+/* feature section CSS ends here */
+
+/* shop now section CSS starts here */
+#shop_now .shop1 {
+    background-image: url('../img/banner-1.png');
+}
+#shop_now .shop2 {
+    background-image: url('../img/banner-2.png');
+}
+#shop_now .shop3 {
+    background-image: url('../img/banner-3.png');
+}
+
+#shop_now .shop_item {
+    background-size: cover;
+    background-position: center ;
+    border-radius: 15px;
+    height: 235px;
+}
+#shop_now .shop_item .shop_text {
+    margin: 0px 72px 0px 50px;
+    position: relative;
+    top: 50px;
+}
+#shop_now .shop_item .shop_text h4{
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--hlt-text);
+    margin-bottom: 40px;
+    transition: all linear 0.3s;
+}
+#shop_now .shop2 .shop_text h4, #shop_now .shop3 .shop_text h4 {
+    margin-bottom: 65px;
+}
+#shop_now .shop_item .shop_text:hover h4 {
+    transform: translateY(-10px);
+}
+#shop_now .shop_item .shop_text a {
+    background-color: var(--main);
+    display: inline-block;
+    padding: 7px 8px 7px 12px;
+    font-size: 12px;
+    font-family: var(--quicksand);
+    color: #fff;
+    text-align: center;
+    line-height: 1.3;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: all linear 0.4s;
+}
+#shop_now .shop_item .shop_text a:hover {
+    background-color: var(--hover-yellow);
+}
+#shop_now .shop_item .shop_text a i {
+    padding-right: 7px;
+    transition: all linear 0.4s;
+}
+#shop_now .shop_item .shop_text a:hover i {
+    padding-left: 10px;
+}
+/* shop now section CSS ends here */
