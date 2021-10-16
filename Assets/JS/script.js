@@ -5,7 +5,7 @@ $(function(){
         vertical: true,
         verticalSwiping: true,
         autoplay: true,
-        autoplaySpeed: 800
+        autoplaySpeed: 900
     })
 
     $('.banner_wrapper').slick({
