@@ -56,6 +56,9 @@ a,a:hover {
     color: var(--main);
     transform: translateY(-4px);
 }
+.section_header .section_menu li a.active {
+    color: var(--main);
+}
 .slider_icon {
     position: absolute;
     width: 40px;
@@ -69,6 +72,29 @@ a,a:hover {
     z-index: 1;
     cursor: pointer;
     transition: all linear 0.4s;
+}
+a.shop_now {
+    background-color: var(--main);
+    display: inline-block;
+    padding: 7px 8px 7px 12px;
+    font-size: 12px;
+    font-family: var(--quicksand);
+    color: #fff;
+    text-align: center;
+    line-height: 1.3;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: all linear 0.4s;
+}
+a.shop_now:hover {
+    background-color: var(--hover-yellow);
+}
+a.shop_now i {
+    padding-right: 7px;
+    transition: all linear 0.4s;
+}
+a.shop_now:hover i {
+    padding-left: 10px;
 }
 /*common Css */
 
@@ -607,27 +633,343 @@ a,a:hover {
 #shop_now .shop_item .shop_text:hover h4 {
     transform: translateY(-10px);
 }
-#shop_now .shop_item .shop_text a {
-    background-color: var(--main);
-    display: inline-block;
-    padding: 7px 8px 7px 12px;
-    font-size: 12px;
-    font-family: var(--quicksand);
-    color: #fff;
-    text-align: center;
-    line-height: 1.3;
-    font-weight: 600;
-    border-radius: 5px;
-    transition: all linear 0.4s;
-}
-#shop_now .shop_item .shop_text a:hover {
-    background-color: var(--hover-yellow);
-}
-#shop_now .shop_item .shop_text a i {
-    padding-right: 7px;
-    transition: all linear 0.4s;
-}
-#shop_now .shop_item .shop_text a:hover i {
-    padding-left: 10px;
-}
 /* shop now section CSS ends here */
+
+/* Popular products section begins here*/
+#popular_products {
+    margin: 67px 0px 21px;
+}
+#popular_products .section_menu ul li a {
+    margin: 0px 10px;
+}
+#popular_products .section_header {
+    margin-bottom: 50px;
+}
+#popular_products .section_menu ul {
+    border-bottom: none;
+}
+#popular_products img,
+ #daily_best_sell img{
+    width: 100%;
+    display: inline-block;
+}
+#popular_products .popular_item,
+ #daily_best_sell .daily_item{
+    padding: 26px 22px;
+    overflow: hidden;
+    border: 1px solid #ececec;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    position: relative;
+    transition: all linear 0.2s;
+}
+#popular_products .popular_item:hover, 
+#daily_best_sell .daily_item:hover  {
+    border: 1px solid #BCE3C9;
+    box-shadow: 5px 5px 15px rgb(0 0 0 / 5%);
+}
+#popular_products .popular_item .popular_thum_wrapper,
+ #daily_best_sell .daily_item .daily_thum_wrapper{
+    position: relative;
+}
+#popular_products .popular_item .popular_thum, 
+#daily_best_sell .daily_item .daily_thum {
+    position: relative;
+    padding: 4px;
+} 
+#popular_products .popular_thum .hover_img, 
+#daily_best_sell .daily_thum .hover_img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    padding: 4px;
+    z-index: 2;
+    transition: all linear 0.3s;
+}
+#popular_products .popular_thum .main_img, 
+#daily_best_sell .daily_thum .main_img{
+    transition: all linear 0.25s;
+}
+#popular_products .popular_item:hover .main_img, 
+#daily_best_sell .daily_item:hover .main_img{
+    visibility: hidden;
+    opacity: 0;
+}
+#popular_products .popular_item:hover .hover_img, 
+#daily_best_sell .daily_item:hover .hover_img {
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1.05);
+}
+#popular_products .thumb_overlay_btn, #daily_best_sell .daily_overlay_btn {
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid #BCE3C9;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 20px 20px 40px rgb(0 0 0 / 7%);
+    z-index: 99;
+    opacity: 0;
+    visibility: visible;
+    transition: all linear 0.3s;
+}
+#popular_products .thumb_overlay_btn ul li, 
+#daily_best_sell .daily_overlay_btn ul li{
+    display: inline-block;
+}
+#popular_products .thumb_overlay_btn ul li a, 
+#daily_best_sell .daily_overlay_btn ul li a {
+    display: inline-block;
+    font-size: 12px;
+    color: var(--main);
+    padding: 7px 6px;
+    border-right: 1px solid #BCE3C9;
+    position: relative;
+    transition: all linear 0.3s;
+}
+#popular_products .thumb_overlay_btn ul li:nth-child(3) a,
+#daily_best_sell .daily_overlay_btn ul li:nth-child(3) a {
+    border-right: none;
+}
+#popular_products .thumb_overlay_btn ul li a span,
+#daily_best_sell .daily_overlay_btn ul li a span{
+    display: inline-block;
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    text-align: center;
+    width: 87px;
+    background-color: var(--main);
+    color: #fff;
+    font-size: 11px;
+    font-weight: 600;
+    font-family: var(--quicksand);
+    padding: 5px;
+    border-radius: 5px;
+    transform: translateY(10px);
+    opacity: 0;
+    visibility: hidden;
+    transition: all linear 0.3s;
+}
+#popular_products .thumb_overlay_btn ul li span:after, 
+#daily_best_sell .daily_overlay_btn ul li span:after {
+    content: '';
+    position: absolute;
+    bottom: -7px;
+    left: 44%;
+    transform: rotate(180deg);
+    width: 0;
+    height: 0;
+    border: 5px solid transparent;
+    border-top: 0;
+    border-bottom: 7px solid var(--main);
+}
+#popular_products .thumb_overlay_btn ul li a:hover span,
+#daily_best_sell .daily_overlay_btn ul li a:hover span {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(-5px);
+}
+#popular_products .thumb_overlay_btn ul li a:hover,
+#daily_best_sell .daily_overlay_btn ul li a:hover {
+    color: var(--hover-yellow);
+}
+#popular_products .popular_item:hover .thumb_overlay_btn,
+#daily_best_sell .daily_item:hover .daily_overlay_btn{
+    visibility: visible;
+    opacity: 1;
+}
+#popular_products .popular_info a, 
+#daily_best_sell .daily_info a{
+    font-family: var(--lato);
+    font-size: 12px;
+    color: #adadad;
+    transition: all .3s ease 0s;
+}
+#popular_products .popular_info a:hover,
+#daily_best_sell .daily_info a:hover{
+    color: var(--main);
+}
+#popular_products .popular_info h4 a,
+#daily_best_sell .daily_info h4 a{
+    font-weight: 700;
+    color: var(--hlt-text);
+    font-size: 16px;
+    font-family: var(--quicksand);
+}
+#popular_products .popular_info h4,
+#daily_best_sell .daily_info h4{
+    line-height: 0.9;
+    padding: 2px 0px 9px;
+}
+#popular_products .popular_info .rating{
+    font-size: 14px;
+    color: #b6b6b6;
+    font-weight: 400;
+}
+#popular_products .popular_info .rating i,
+#daily_best_sell .daily_info .rating i{
+    color: var(--hover-yellow);
+    font-size: 12px;
+}
+#popular_products .popular_info .popular_vendor{
+    font-size: 14px;
+    color: #b6b6b6;
+    margin: 7px 0px 18px;
+}
+#popular_products .popular_info .popular_vendor a{
+    color: var(--main);
+    transition: all linear 0.2s;
+}
+#popular_products .popular_info .popular_vendor a:hover{
+    color: var(--hover-yellow);
+}
+#popular_products .popular_price h3,
+#daily_best_sell .daily_price h3{
+    font-weight: 700;
+    color: var(--main);
+    font-size: 18px;
+    display: inline-block;
+    padding-right: 35px;
+}
+#popular_products .popular_price a {
+    display: inline-block;
+    background-color: #def9ec;
+    padding: 7px 20px;
+    font-size: 14px;
+    color: var(--main);
+    font-weight: 600;
+    border-radius: 4px;
+    transition: all .3s ease 0s;
+}
+#popular_products .popular_price a i {
+    padding-right: 5px;
+}
+#popular_products .popular_price a:hover {
+    background-color: var(--main);
+    color: #fff;
+    box-shadow: 5px 5px 15px rgb(0 0 0 / 5%);
+    transform: translateY(-3px);
+}
+#popular_products .popular_price h5,
+#daily_best_sell .daily_price h5 {
+    font-size: 14px;
+    font-weight: 700;
+    color: #adadad;
+}
+.product_badge span, 
+.product_badge span{
+    display: inline-block;
+    font-family: var(--lato);
+    font-size: 12px;
+    color: #fff;
+    padding: 9px 20px 10px 20px;
+    border-radius: 15px 0px 20px 0px;
+    line-height: 1;
+}
+.product_badge,
+.product_badge {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+}
+.product_badge span.sale {
+    background-color: #67bcee;
+}
+.product_badge span.hot {
+    background-color: #f74b81;
+}
+.product_badge span.new {
+    background-color: #3BB77E;
+}
+.product_badge span.percent {
+    background-color: #f59758;
+} 
+/* Popular products section ends here*/
+
+/* daily best sell section starts here */
+#daily_best_sell .section_header {
+    margin-bottom: 38px;
+}
+#daily_best_sell .daily_item_inner {
+    padding: 0px 10px;
+}
+#daily_best_sell .daily_item_inner:nth-child(1) {
+    padding: 0px 10px 0px 0px;
+}
+#daily_best_sell .daily_bg {
+    background-image: url('../img/banner-4.png');
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+    padding: 50px 51px;
+}
+#daily_best_sell .daily_bg h2 {
+    color: var(--hlt-text);
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.2;
+    margin-bottom: 100px;
+}
+#daily_best_sell .daily_item {
+    margin-bottom: 0;
+}
+#daily_best_sell .daily_item h3 {
+    padding-right: 10px;
+}
+#daily_best_sell .daily_item h5 {
+    display: inline-block
+}
+#daily_best_sell .daily_item h4 {
+    line-height: 0.8;
+    padding: 2px 0px 6px;
+}
+#daily_best_sell .daily_price {
+    margin: 19px 0px 14px;
+}
+#daily_best_sell .daily_percentage .daily_bar_bg {
+    background-color: #e9ecef;
+    height: 5px;
+}
+#daily_best_sell .daily_percentage .daily_bar {
+    background-color: var(--main);
+}
+#daily_best_sell .daily_percentage p{
+    color: var(--hlt-text);
+    font-family: var(--lato);
+    font-size: 13px;
+    padding-top: 7px;
+}
+#daily_best_sell .daily_cart_btn {
+    margin: 20px 0px 0px;
+}
+#daily_best_sell .daily_cart_btn a {
+    display: block;
+    background-color: var(--main);
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    padding: 13px 30px;
+    border-radius: 5px;
+    transition: all linear 0.2s;
+}
+#daily_best_sell .daily_cart_btn a:hover {
+    background-color: var(--hover-yellow);
+    transform: translateY(-5px);
+}
+#daily_best_sell .daily_icon {
+    top: 32%;
+    left: 15px;
+    transform: translateY(-32%);
+}
+#daily_best_sell .daily_icon.fa-arrow-right {
+    left: auto;
+    right: 30px;
+}
+/* daily best sell section ends here*/
