@@ -23,4 +23,15 @@ $(function(){
         prevArrow: "<i class='fas fa-arrow-left slider_icon feature_icon'></i>",
         nextArrow: "<i class='fas fa-arrow-right slider_icon feature_icon'></i>",
     })
+
+    $('.daily_slider').slick({
+        slidesToShow: 4,
+        SlidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1200,
+        speed: 800,
+        prevArrow: "<i class='fas fa-arrow-left slider_icon daily_icon'></i>",
+        nextArrow: "<i class='fas fa-arrow-right slider_icon daily_icon'></i>",
+    })
+    
 })
