@@ -701,7 +701,7 @@ a.shop_now:hover i {
 #daily_best_sell .daily_item:hover .hover_img {
     visibility: visible;
     opacity: 1;
-    transform: scale(1.05);
+    transform: scale(1.06);
 }
 #popular_products .thumb_overlay_btn, #daily_best_sell .daily_overlay_btn {
     background-color: #fff;
