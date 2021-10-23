@@ -1301,6 +1301,10 @@ a.shop_now:hover i {
 #footer .middle_footer .middle_footer_btn a {
     display: inline-block;
     margin-right: 12px;
+    transition: all linear 0.2s;
+}
+#footer .middle_footer .middle_footer_btn a:hover {
+    transform: translateY(-5px)
 }
 #footer .middle_footer .middle_footer_btn img {
     max-width: 128px;
